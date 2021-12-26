@@ -91,20 +91,3 @@ jar {
         ])
     }
 }
-
-// The below could be in the parent build.gradle rather than here.
-
-// If running unquialified task name, only run the workspace version
-['runClient', 'runServer'].each { taskName -> {
-    parent.tasks.create(taskName) {
-        doFirst {
-            parent.childProjects.each { name, proj -> {
-                proj.tasks.each { task -> {
-                    if (name != 'workspace' && task.name == taskName) {
-                        task.enabled = false
-                    }
-                }}
-            }}
-        }
-    }
-}}
