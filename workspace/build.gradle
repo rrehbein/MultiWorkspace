@@ -69,7 +69,6 @@ dependencies {
             if (name == project.name) {
                 // skip self
             } else {
-                println "Including a dependency for module ${name}"
                 runtimeClasspath(proj) { transitive = true }
             }
         }
