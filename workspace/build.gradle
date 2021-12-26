@@ -17,7 +17,7 @@ version = '1.0'
 group = 'com.example.workspace' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'workspace'
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+java.toolchain.languageVersion = JavaLanguageVersion.of(java_version)
 
 minecraft {
     mappings channel: mc_mapping_channel, version: mc_mapping_version
