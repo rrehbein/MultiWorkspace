@@ -1,3 +1,4 @@
 workspace/build/
 workspace/run/
+workspace/src/generated/resources/.cache/
 .gradle
