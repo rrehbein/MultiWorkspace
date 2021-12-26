@@ -18,3 +18,9 @@
     }
 }}
 
+// runData should run in each project. Not just workspace
+tasks.create('runData') {
+    doFirst {
+        childProjects['workspace'].tasks['runData'].enabled = false
+    }
+}
