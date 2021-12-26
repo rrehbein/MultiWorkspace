@@ -1,0 +1,11 @@
+modLoader="javafml"
+loaderVersion="[39,)"
+license="MIT License"
+[[mods]]
+# The modid of the mod
+modId="workspace"
+version="${file.jarVersion}"
+displayName="workspace resources mod"
+description='''
+A blank mod used with multiworkspace
+'''

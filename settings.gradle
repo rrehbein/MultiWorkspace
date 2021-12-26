@@ -1,0 +1,6 @@
+rootProject.name = 'multi-project-workspace'
+
+include 'McJtyLib'
+include 'HoloGui', 'Ariente'
+
+include 'workspace'
